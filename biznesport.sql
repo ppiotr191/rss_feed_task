@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Paź 2017, 16:18
+-- Czas generowania: 27 Paź 2017, 20:19
 -- Wersja serwera: 10.1.22-MariaDB
 -- Wersja PHP: 7.1.4
 
@@ -30,11 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `rss_articles` (
   `id` int(11) NOT NULL,
-  `title` varchar(135) CHARACTER SET latin1 NOT NULL,
+  `title` varchar(135) COLLATE utf8_unicode_ci NOT NULL,
   `published_at` datetime NOT NULL,
-  `content` text CHARACTER SET latin1 NOT NULL,
+  `content` text COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL,
-  `guid` text CHARACTER SET latin1 NOT NULL
+  `guid` text COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
