@@ -7,13 +7,11 @@ use RSSPackage\RSSSite\Xmoon;
 
 class Manager {
     public function start(){
-
         $sites = [
             new KomputerSwiat(), 
             new Rmf(), 
             new Xmoon()
         ];
-
         foreach ($sites as $site){
             try{               
                 $site->downloadRSS();

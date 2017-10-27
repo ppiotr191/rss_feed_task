@@ -17,13 +17,16 @@ class Database {
 
         $this->pdo = new \PDO($dns, $config['username'], $config['password']);
     }
+    
     private function __clone() {}
+    
     public static function getInstance() {
         if(self::$instance === null) {
             self::$instance = new Database();
         }
         return self::$instance;
     }
+    
     public function getPDO(){
         return $this->pdo;
     }

@@ -14,6 +14,7 @@ class Log {
         }
         return self::$instance;
     }
+    
     public function log($info){
         file_put_contents(self::LOG_FILE, $info."\n", FILE_APPEND | LOCK_EX);
     }

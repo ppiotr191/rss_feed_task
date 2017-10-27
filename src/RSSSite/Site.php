@@ -7,7 +7,6 @@ use RSSPackage\Database;
 use RSSPackage\Log;
 
 class Site{
-
     const DATE_FORMAT = "Y-m-d H:i:s";
     const INSERT_FEED_SQL = "INSERT INTO rss_articles(title, published_at, content, created_at, guid) 
     VALUES(?, ?, ?, ?, ?)";
